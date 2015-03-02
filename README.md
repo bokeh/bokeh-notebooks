@@ -7,6 +7,6 @@ Bokeh is a Python interactive visualization library for large datasets that nati
 
 These IPython notebooks provide useful Bokeh examples and a tutorial to get started. You can visualize the rendered IPython notebooks [here](http://nbviewer.ipython.org/github/bokeh/bokeh-notebooks) or download the repository and execute `ipython notebook` from your terminal.
 
-Please visit the [Bokeh web page](http://bokeh.pydata.org/) for more information and full documentation.
+Please visit the [Bokeh web page](http://bokeh.pydata.org/en/latest) for more information and full documentation.
 
 Be sure to follow us on Twitter @bokehplots!
