@@ -1,3 +1,4 @@
+from collections import OrderedDict
 import pandas as pd
 import numpy as np
 
@@ -159,3 +160,30 @@ def get_bubble_html():
         plot_div=div,
     )
     return html
+
+
+def get_1964_data():
+    years, regions, fertility_df, life_expectancy_df, population_df_size, regions_df = _get_data()
+    year = 1964
+    region_color = regions_df['region_color']
+    region_color.name = 'region_color'
+    fertility = fertility_df[year]
+    fertility.name = 'fertility'
+    life = life_expectancy_df[year]
+    life.name = 'life'
+    population = population_df_size[year]
+    population.name = 'population'
+    new_df = pd.concat([fertility, life, population, region_color], axis=1)
+    return new_df
+
+
+def get_scatter_data():
+    years, regions, fertility_df, life_expectancy_df, population_df_size, regions_df = _get_data()
+    xyvalues = OrderedDict()
+    xyvalues['1964'] = list(
+        zip(
+            fertility_df[1964].dropna().values,
+            life_expectancy_df[1964].dropna().values
+        )
+    )
+    return xyvalues
