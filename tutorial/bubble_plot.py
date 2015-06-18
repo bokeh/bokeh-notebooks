@@ -12,7 +12,7 @@ from bokeh.models import (
 )
 from bokeh.palettes import Spectral6
 from bokeh.plotting import vplot, hplot
-from bokeh.resources import INLINE
+from bokeh.resources import INLINE, Resources
 from bokeh.templates import RESOURCES
 
 
@@ -147,11 +147,15 @@ def _get_plot():
     return vplot(plot, hplot(slider))
 
 
-def get_bubble_html():
-    layout = _get_plot()
+def get_bubble_html(plot=None):
+    if plot:
+        layout = plot
+    else:
+        layout = _get_plot()
     with open('assets/bubble_template.html', 'r') as f:
         template = Template(f.read())
-    bokeh_js = RESOURCES.render(js_raw=INLINE.js_raw)
+    resources = Resources(mode='server', root_url='/tree/')
+    bokeh_js = RESOURCES.render(js_files=resources.js_files)
     script, div = components(layout)
     html = template.render(
         title="Bokeh - Gapminder demo",
