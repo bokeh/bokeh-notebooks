@@ -8,7 +8,8 @@ from bokeh.embed import components
 from bokeh.models import (
     ColumnDataSource, Plot, Circle, Range1d,
     LinearAxis, HoverTool, Text,
-    SingleIntervalTicker, Slider, Callback
+    SingleIntervalTicker, Slider, CustomJS,
+    WheelZoomTool, PanTool, ResetTool
 )
 from bokeh.palettes import Spectral6
 from bokeh.plotting import vplot, hplot
@@ -137,7 +138,7 @@ def _get_plot():
         text_source.trigger('change');
     """ % js_source_array
 
-    callback = Callback(args=sources, code=code)
+    callback = CustomJS(args=sources, code=code)
     slider = Slider(start=years[0], end=years[-1], value=1, step=1, title="Year", callback=callback)
     callback.args["slider"] = slider
     callback.args["renderer_source"] = renderer_source
