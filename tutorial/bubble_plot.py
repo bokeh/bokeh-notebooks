@@ -8,8 +8,7 @@ from bokeh.embed import components
 from bokeh.models import (
     ColumnDataSource, Plot, Circle, Range1d,
     LinearAxis, HoverTool, Text,
-    SingleIntervalTicker, Slider, CustomJS,
-    WheelZoomTool, PanTool, ResetTool
+    SingleIntervalTicker, Slider, CustomJS
 )
 from bokeh.palettes import Spectral6
 from bokeh.plotting import vplot, hplot
