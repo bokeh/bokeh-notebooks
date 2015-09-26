@@ -14,6 +14,7 @@ This tutorial has been tested on:
 * bokeh=0.10
 * pandas=0.16
 * ipython-notebook=4.0.4
+* ipywidgets=4.0.3
 
 Other combinations, may work. Packages are availalable via pypi and anaconda.org.
 
@@ -30,13 +31,13 @@ Use the command line to create an environment and install the packages:
 
     $ conda create -n bokeh_tutorial python=3.4
     $ source activate bokeh_tutorial
-    $ conda install bokeh pandas ipython-notebook
+    $ conda install bokeh pandas ipython-notebook ipywidgets
 
 #### Install with pip
 
 We recommend creating a virtual environment.
 
-    $ pip install bokeh pandas "ipython[notebook]"
+    $ pip install bokeh pandas "ipython[notebook]" ipywidgets
 
 ### Get the sample data
 
