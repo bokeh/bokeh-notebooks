@@ -186,3 +186,24 @@ def get_gapminder_1964_scatter_data():
         )
     )
     return xyvalues
+
+
+def get_medal_data():
+    from bokeh.sampledata.olympics2014 import data as olympics2014
+
+    data = []
+    for item in olympics2014['data']:
+        if item['medals']['total'] == 0:
+            # Don't use countries with no medals
+            continue
+        new_item = {}
+        new_item['country'] = item['abbr']
+        new_item['name'] = item['name']
+        new_item['medals'] = [
+            {'medal': 'bronze', 'count': item['medals']['bronze']},
+            {'medal': 'silver', 'count': item['medals']['silver']},
+            {'medal': 'gold', 'count': item['medals']['gold']}
+        ]
+        data.append(new_item)
+    medals = pd.io.json.json_normalize(data, 'medals', ['name', 'country'])
+    return medals
