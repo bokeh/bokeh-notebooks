@@ -6,7 +6,7 @@
 
     $ git clone https://github.com/bokeh/bokeh-notebooks.git
 
-Or download from: https://github.com/bokeh/bokeh-notebooks/archive/strata_ny2015.zip
+Or download from: https://github.com/bokeh/bokeh-notebooks/archive/master.zip
 
 ### Install the dependencies
 
