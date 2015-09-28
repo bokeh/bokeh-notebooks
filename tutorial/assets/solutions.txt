@@ -1,0 +1,20 @@
+01 - charts
+
+# Make a line chart with marriage-divorce data
+line = Line(
+    marriages_divorces, x='Year', y=['Marriages_per_1000', 'Divorces_per_1000'], tools=TOOLS,
+    legend=True, width=800, responsive=True, xlabel='', ylabel='per 1000 people',
+)
+show(line)
+
+# Make a bar chart with medals data
+bar = Bar(
+    medals, label='name', values='count', stack='medal', tools=TOOLS,
+)
+
+# Add a little more color and customization
+bar = Bar(
+    medals, label='name', values='count', stack='medal', tools='crosshair',
+    xlabel='', ylabel='Count', bar_width=0.9, width=1200, height=600,
+    color=['saddlebrown', 'darkorange', 'silver'], responsive=True)
+show(bar)
