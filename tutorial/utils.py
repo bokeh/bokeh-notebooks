@@ -13,7 +13,7 @@ from bokeh.models import (
 from bokeh.palettes import Spectral6
 from bokeh.plotting import vplot
 from bokeh.resources import CDN
-from bokeh.templates import JS_RESOURCES
+from bokeh.core.templates import JS_RESOURCES
 
 
 def _process_gapminder_data():
