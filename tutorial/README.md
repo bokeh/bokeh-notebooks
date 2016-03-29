@@ -11,10 +11,10 @@ Or download from: https://github.com/bokeh/bokeh-notebooks/archive/master.zip
 ### Install the dependencies
 
 This tutorial has been tested on:
-* bokeh=0.10
-* pandas=0.16
+* bokeh=0.11.1
+* pandas=0.18
 * ipython-notebook=4.0.4
-* ipywidgets=4.0.3
+* ipywidgets=4.1.1
 
 Other combinations, may work. Packages are availalable via pypi and anaconda.org.
 
