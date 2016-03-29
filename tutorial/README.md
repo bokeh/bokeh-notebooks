@@ -50,4 +50,4 @@ it run:
 
 From this folder run ipython notebook, and open the `00-intro.ipynb` notebook.
 
-    $ ipython notebook
+    $ jupyter notebook
