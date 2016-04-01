@@ -97,8 +97,8 @@ def get_gapminder_plot():
         major_tick_line_width=1,
     )
 
-    xaxis = LinearAxis(SingleIntervalTicker(interval=1), axis_label="Children per woman (total fertility)", **AXIS_FORMATS)
-    yaxis = LinearAxis(SingleIntervalTicker(interval=20), axis_label="Life expectancy at birth (years)", **AXIS_FORMATS)
+    xaxis = LinearAxis(ticker=SingleIntervalTicker(interval=1), axis_label="Children per woman (total fertility)", **AXIS_FORMATS)
+    yaxis = LinearAxis(ticker=SingleIntervalTicker(interval=20), axis_label="Life expectancy at birth (years)", **AXIS_FORMATS)
     plot.add_layout(xaxis, 'below')
     plot.add_layout(yaxis, 'left')
 
