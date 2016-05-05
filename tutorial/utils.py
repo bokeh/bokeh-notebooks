@@ -4,17 +4,16 @@ import numpy as np
 
 from jinja2 import Template
 
+from bokeh.core.templates import JS_RESOURCES
 from bokeh.embed import components
 from bokeh.models import (
     ColumnDataSource, Plot, Circle, Range1d,
-    LinearAxis, HoverTool, Text,
+    LinearAxis, HoverTool, Text, HoverTool,
     SingleIntervalTicker, Slider, CustomJS
 )
 from bokeh.palettes import Spectral6
-from bokeh.plotting import vplot
+from bokeh.plotting import vplot, figure, ColumnDataSource
 from bokeh.resources import CDN
-from bokeh.templates import JS_RESOURCES
-
 
 def _process_gapminder_data():
     from bokeh.sampledata.gapminder import fertility, life_expectancy, population, regions
@@ -97,8 +96,8 @@ def get_gapminder_plot():
         major_tick_line_width=1,
     )
 
-    xaxis = LinearAxis(SingleIntervalTicker(interval=1), axis_label="Children per woman (total fertility)", **AXIS_FORMATS)
-    yaxis = LinearAxis(SingleIntervalTicker(interval=20), axis_label="Life expectancy at birth (years)", **AXIS_FORMATS)
+    xaxis = LinearAxis(ticker=SingleIntervalTicker(interval=1), axis_label="Children per woman (total fertility)", **AXIS_FORMATS)
+    yaxis = LinearAxis(ticker=SingleIntervalTicker(interval=20), axis_label="Life expectancy at birth (years)", **AXIS_FORMATS)
     plot.add_layout(xaxis, 'below')
     plot.add_layout(yaxis, 'left')
 
@@ -205,13 +204,10 @@ def get_medal_data():
             {'medal': 'gold', 'count': item['medals']['gold']}
         ]
         data.append(new_item)
-    medals = pd.io.json.json_normalize(data, 'medals', ['name', 'country'])
-    return medals
+
+    return pd.io.json.json_normalize(data, 'medals', ['name', 'country'])
 
 def get_custom_hover():
-    from bokeh.plotting import figure, output_file, show, ColumnDataSource
-    from bokeh.models import HoverTool
-
     source = ColumnDataSource(
             data=dict(
                 x=[1, 2, 3, 4, 5],
