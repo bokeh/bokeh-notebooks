@@ -12,9 +12,9 @@ Or download from: https://github.com/bokeh/bokeh-notebooks/archive/master.zip
 
 This tutorial has been tested on:
 * bokeh=0.11.1
-* pandas=0.16
+* pandas=0.17
 * ipython-notebook=4.0.4
-* ipywidgets=4.0.3
+* ipywidgets=4.1.1
 
 Other combinations, may work. Packages are available via PyPI and anaconda.org.
 
@@ -51,4 +51,4 @@ it run:
 
 From this folder run ipython notebook, and open the `00-intro.ipynb` notebook.
 
-    $ ipython notebook
+    $ jupyter notebook
