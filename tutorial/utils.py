@@ -6,13 +6,14 @@ from jinja2 import Template
 
 from bokeh.core.templates import JS_RESOURCES
 from bokeh.embed import components
+from bokeh.layouts import column
 from bokeh.models import (
     ColumnDataSource, Plot, Circle, Range1d,
     LinearAxis, HoverTool, Text, HoverTool,
     SingleIntervalTicker, Slider, CustomJS
 )
 from bokeh.palettes import Spectral6
-from bokeh.plotting import vplot, figure, ColumnDataSource
+from bokeh.plotting import figure, ColumnDataSource
 from bokeh.resources import CDN
 
 def _process_gapminder_data():
@@ -71,12 +72,11 @@ def get_gapminder_plot():
     plot = Plot(
         x_range=xdr,
         y_range=ydr,
-        title="",
         plot_width=800,
         plot_height=400,
         outline_line_color=None,
         toolbar_location=None,
-        responsive=True,
+        sizing_mode="scale_width",
     )
     AXIS_FORMATS = dict(
         minor_tick_in=None,
@@ -143,7 +143,7 @@ def get_gapminder_plot():
     callback.args["text_source"] = text_source
 
     # Lay it out
-    return vplot(plot, slider)
+    return column(plot, slider)
 
 
 def get_gapminder_html():
@@ -152,7 +152,7 @@ def get_gapminder_html():
         template = Template(f.read())
     script, div = components(layout)
     html = template.render(
-        title="Bokeh - Gapminder demo",
+        title="Bokeh Gapminder demo",
         bokeh_js=JS_RESOURCES.render(js_raw=CDN.js_raw, js_files=CDN.js_files),
         plot_script=script,
         plot_div=div,
