@@ -11,18 +11,18 @@ Or download from: https://github.com/bokeh/bokeh-notebooks/archive/master.zip
 ### Install the dependencies
 
 This tutorial has been tested on:
-* bokeh=0.11.1
-* pandas=0.17
+* bokeh=0.12.0
+* pandas=0.18
 * ipython-notebook=4.0.4
 * ipywidgets=4.1.1
 
-Other combinations, may work. Packages are available via PyPI and anaconda.org.
+Other combinations may work also. Packages are available via PyPI and anaconda.org.
 
 #### Installing with anaconda
 
 Install [anaconda](http://continuum.io/downloads)
 
-Anaconda should come with all the dependencies included, you may need to update your versions.
+Anaconda should come with all the dependencies included, but you may need to update your versions.
 
 #### Install with miniconda
 
@@ -47,8 +47,8 @@ it run:
 
     $ bokeh sampledata
 
-### Run ipython notebook
+### Run Jupyter/IPython notebook
 
-From this folder run ipython notebook, and open the `00-intro.ipynb` notebook.
+From this folder run jupyter notebook, and open the `00-intro.ipynb` notebook.
 
     $ jupyter notebook
