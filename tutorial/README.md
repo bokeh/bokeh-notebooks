@@ -52,8 +52,9 @@ it run:
 Optional tutorials 11 and 12 require the datashader and holoviews packages,
 respectively, which can be installed with:
 
-    $ conda install datashader holoviews
-    
+    $ conda install datashader
+    $ conda install -c holoviews/label/dev holoviews
+   
 ### Run Jupyter/IPython notebook
 
 From this folder run jupyter notebook, and open the `00-intro.ipynb` notebook.
