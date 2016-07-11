@@ -52,7 +52,7 @@ it run:
 Optional tutorials 11 and 12 require the datashader and holoviews packages,
 respectively, which can be installed with:
 
-    $ conda install datashader
+    $ conda install -c bokeh datashader
     $ conda install -c holoviews/label/dev holoviews
    
 ### Run Jupyter/IPython notebook
