@@ -1,0 +1,7 @@
+name: bokeh-notebooks
+dependencies:
+  - python
+  - bokeh=0.12.2
+  - pandas
+  - jupyter
+  - nodejs
