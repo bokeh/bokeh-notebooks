@@ -34,18 +34,11 @@ Install [miniconda](http://conda.pydata.org/miniconda.html).
 Use the command line to create an environment and install the packages:
 
 ```
-$ conda create -n bokeh_tutorial python=3.4
-$ source activate bokeh_tutorial
-$ conda install bokeh pandas ipython-notebook ipywidgets
+$ conda env create
+$ source activate bokeh-notebooks
 ```
 
-#### Install with pip
-
-We recommend creating a virtual environment.
-
-```
-$ pip install bokeh pandas "ipython[notebook]" ipywidgets
-```
+Run this from the tutorial directory where environment.yml lives.
 
 ### Get the sample data
 
