@@ -1,8 +1,4 @@
-# Bokeh Tutorial
-
-## Setup
-
-### Clone or download the repo
+## Clone or download the repo
 First get local copies of the tutorial notebooks:
 
 ```
@@ -11,57 +7,69 @@ $ git clone https://github.com/bokeh/bokeh-notebooks.git
 
 Or download from: https://github.com/bokeh/bokeh-notebooks/archive/master.zip
 
-### Install the dependencies
+## Install the dependencies
 
 This tutorial has been tested on:
-* bokeh=0.12.0
-* pandas=0.18
-* ipython-notebook=4.0.4
-* ipywidgets=4.1.1
 
-Other combinations may work also. Packages are available via PyPI and anaconda.org.
+* bokeh 0.12.7
+* pandas 0.20.3
+* notebook 5.0.0
+* phantomjs 2.1.1
+* pillow 4.2.1
+* selenium 3.5.0
+
+Other combinations may work also.
+
+The quickest, easiest way to install is to use Anaconda (or Miniconda):
 
 #### Installing with anaconda
 
-Install [anaconda](http://continuum.io/downloads)
+Install [anaconda](http://anaconda.com/downloads)
 
 Anaconda should come with all the dependencies included, but you may need to update your versions.
 
-#### Install with miniconda
+#### Installing with miniconda
 
 Install [miniconda](http://conda.pydata.org/miniconda.html).
 
 Use the command line to create an environment and install the packages:
 
-```
+```bash
 $ conda env create
 $ source activate bokeh-notebooks
 ```
 
-Run this from the tutorial directory where environment.yml lives.
+NOTE: Run this in the `tutorial` directory where `environment.yml` file is.
 
-### Get the sample data
+----
+
+Once you've got a base install, you can install the remaining dependencies with:
+
+```bash
+conda install phantomjs pillow selenium
+```
+
+## Get the sample data
 
 Bokeh has a sample data download that gives us some data to build demo visualizations. To get
-it run:
+it run the following command at your command line:
 
-```
+```bash
 $ bokeh sampledata
 ```
 
-### Install datashader and holoviews (optional)
+### Install Datashader and Holoviews (optional)
 
-Optional tutorials 11 and 12 require the datashader and holoviews packages,
-respectively, which can be installed with:
+Some optional sections require the additional packages Flask, Datashader, and Holoviews.
+These  can be installed with:
 
 ```bash
-$ conda install -c bokeh datashader
-$ conda install -c holoviews/label/dev holoviews
+$ conda install -c datashader holoviews flask
 ```
 
-### Run Jupyter/IPython notebook
+## Run the Jupyter notebook
 
-From this folder run jupyter notebook, and open the `00-intro.ipynb` notebook.
+From this folder run jupyter notebook, and open the [00 - Introduction and Setup.ipynb](00 - Introduction and Setup.ipynb) notebook.
 
 ```
 $ jupyter notebook
