@@ -1,0 +1,14 @@
+name: bokeh
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.6
+  - numpy
+  - notebook
+  - bokeh
+  - pandas
+  - scipy
+  - datashader
+  - networkx
