@@ -13,7 +13,7 @@ started. You can visualize the rendered Jupyter notebooks
 [on NBViewer](http://nbviewer.ipython.org/github/bokeh/bokeh-notebooks) or
 download the repository and execute `jupyter notebook` from your terminal.
 
-You can also lauch live versions of the Tutorial notebooks [on mybinder](https://mybinder.org/v2/gh/bokeh/bokeh-notebooks/master?filepath=tutorial%2F00%20-%20Introduction%20and%20Setup.ipynb).
+You can also immediately launch live versions of the Tutorial notebooks in your browser [on mybinder](https://mybinder.org/v2/gh/bokeh/bokeh-notebooks/master?filepath=tutorial%2F00%20-%20Introduction%20and%20Setup.ipynb).
 
 Please visit the [Bokeh web page](https://bokeh.pydata.org/en/latest) for
 more information and full documentation.
