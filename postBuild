@@ -1,1 +1,1 @@
-python -c "exec(\"import bokeh\\n bokeh.sampledata.download()\")"
+python -c "exec(\"import bokeh\\nbokeh.sampledata.download()\")"
