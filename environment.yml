@@ -12,3 +12,4 @@ dependencies:
   - scipy
   - datashader
   - networkx
+  - flask
