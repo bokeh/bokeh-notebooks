@@ -14,3 +14,4 @@ dependencies:
   - datashader
   - networkx
   - flask
+  - phantomjs
