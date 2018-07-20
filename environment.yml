@@ -10,6 +10,7 @@ dependencies:
   - bokeh
   - pandas
   - scipy
+  - selenium
   - datashader
   - networkx
   - flask
