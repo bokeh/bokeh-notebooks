@@ -1,0 +1,1 @@
+python -c "exec(\"import bokeh\\nbokeh.sampledata.download()\")"
