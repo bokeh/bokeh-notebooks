@@ -18,4 +18,4 @@ You can also immediately launch live versions of the Tutorial notebooks in your 
 Please visit the [Bokeh web page](https://bokeh.pydata.org/en/latest) for
 more information and full documentation.
 
-Be sure to follow us on Twitter @BokehPlots!
+Be sure to follow us on Twitter [@BokehPlots](https://twitter.com/BokehPlots?lang=en)!
