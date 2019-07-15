@@ -64,7 +64,7 @@ Some optional sections require the additional packages Flask, Datashader, and Ho
 These  can be installed with:
 
 ```bash
-$ conda install -c datashader holoviews flask
+$ conda install -c pyviz datashader holoviews flask
 ```
 
 ## Run the Jupyter notebook
