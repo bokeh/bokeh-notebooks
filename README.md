@@ -19,4 +19,4 @@ Please visit the [Bokeh web page](https://bokeh.org) for
 more information and full documentation, and the [Bokeh Discourse](https://discourse.bokeh.org/)
 for community discussion.
 
-Be sure to follow us on Twitter [@BokehPlots](https://twitter.com/BokehPlots?lang=en)!
+Be sure to follow us on Twitter [@bokeh](https://twitter.com/bokeh)!
