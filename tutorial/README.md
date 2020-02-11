@@ -51,11 +51,18 @@ conda install phantomjs pillow selenium
 
 ## Get the sample data
 
-Bokeh has a sample data download that gives us some data to build demo visualizations. To get
+Bokeh has a [sample data](https://docs.bokeh.org/en/latest/docs/installation.html#sample-data) download that gives us some data to build demo visualizations. To get
 it run the following command at your command line:
 
 ```bash
 $ bokeh sampledata
+```
+
+or run the following from within a Python interpreter:
+
+```python
+import bokeh.sampledata
+bokeh.sampledata.download()
 ```
 
 ### Install Datashader and Holoviews (optional)
