@@ -17,5 +17,4 @@ dependencies:
   - flask
   - phantomjs
   - holoviews
-  - nbformat
-  - jupyter_contrib_nbextensions
+  - jupyter_contrib_nbextensions  # resolves notebook validation failed
