@@ -18,3 +18,4 @@ dependencies:
   - phantomjs
   - holoviews
   - nbformat
+  - jupyter_contrib_nbextensions
