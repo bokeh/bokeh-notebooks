@@ -17,4 +17,5 @@ dependencies:
   - flask
   - phantomjs
   - holoviews
+  - hvplot
   - jupyter_contrib_nbextensions
