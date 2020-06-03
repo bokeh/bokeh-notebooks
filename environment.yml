@@ -15,6 +15,7 @@ dependencies:
   - datashader
   - networkx
   - flask
+  - firefox
   - geckodriver
   - holoviews
   - hvplot
