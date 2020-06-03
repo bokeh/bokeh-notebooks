@@ -15,7 +15,7 @@ dependencies:
   - datashader
   - networkx
   - flask
-  - phantomjs
+  - geckodriver
   - holoviews
   - hvplot
   - jupyter_contrib_nbextensions
