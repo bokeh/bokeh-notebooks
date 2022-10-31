@@ -11,12 +11,11 @@ Or download from: https://github.com/bokeh/bokeh-notebooks/archive/master.zip
 
 This tutorial has been tested on:
 
-* bokeh 1.4.0
-* pandas 0.25.2
-* notebook 6.0.1
-* phantomjs 2.1.1
-* pillow 6.1.0
-* selenium 3.8.0
+* bokeh 3.0.0
+* pandas 1.4.4
+* notebook 6.5.1
+* pillow 9.2.0
+* selenium 3.141.0
 
 Other combinations may work also.
 
