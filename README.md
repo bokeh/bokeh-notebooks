@@ -1,3 +1,7 @@
+# THIS REPO IS OUTDATED. SEE https://github.com/bokeh/tutorial FOR UP TO DATE TUTORIALS
+
+
+
 Bokeh in Jupyter Notebooks
 ==========================
 
